@@ -1,0 +1,302 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+:root {
+  --mainColor: #ff6565;
+  --boxShadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+ul {
+  padding: 0;
+}
+.container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+p {
+  line-height: 1.5;
+}
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+a:hover,
+a:active {
+  color: var(--mainColor);
+}
+button {
+  color: white;
+  background-color: var(--mainColor);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+button:hover,
+button:active {
+  opacity: 0.9;
+}
+ul {
+  list-style: none;
+}
+img {
+  width: 100%;
+}
+section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+.over {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+header {
+  background-image: url("../images/headphones_hero_1.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 100vh;
+}
+header .container {
+  position: relative;
+  color: white;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+@media (max-width: 480px) {
+  header nav {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+}
+header nav .menu {
+  cursor: pointer;
+}
+@media (min-width: 481px) {
+  header nav .menu {
+    display: none;
+  }
+}
+header nav .logo {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 250px;
+}
+@media (max-width: 767px) {
+  header nav .logo {
+    width: 150px;
+  }
+}
+@media (max-width: 480px) {
+  header nav .logo {
+    flex: 1;
+    margin: 0 100px;
+  }
+}
+header nav ul {
+  display: flex;
+  gap: 20px;
+}
+@media (max-width: 767px) {
+  header nav ul {
+    gap: 10px;
+  }
+  header nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  header nav ul {
+    position: absolute;
+    top: 100%;
+    flex-direction: column;
+    background-color: var(--mainColor);
+    padding: 10px;
+    left: -100%;
+  }
+  header nav ul li a {
+    padding: 10px;
+  }
+}
+header nav .menu:hover + ul {
+  left: 0%;
+}
+header .content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  text-align: center;
+  max-width: 600px;
+  margin: 200px auto 0;
+}
+@media (max-width: 767px) {
+  header .content {
+    margin-top: 100px;
+  }
+}
+header .content .head h2 {
+  margin-bottom: 15px;
+}
+header .content button {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+section.do .container h2 {
+  margin-bottom: 20px;
+}
+section.do .container p {
+  max-width: 600px;
+  margin: 0 auto;
+}
+section.do .container > div {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+@media (min-width: 481px) {
+  section.do .container > div {
+    flex-direction: row;
+  }
+}
+section.do .container > div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+@media (min-width: 767px) {
+  section.do .container > div > div {
+    flex-direction: row;
+  }
+}
+section.do .container > div > div div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: var(--boxShadow);
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  transition: 0.3s;
+  cursor: pointer;
+}
+section.do .container > div > div div:hover {
+  transform: translateY(-10px);
+}
+section.do .container > div > div div i {
+  color: var(--mainColor);
+  font-size: 40px;
+}
+section.do .container > div > div div p {
+  max-width: 300px;
+  margin: 0 auto;
+}
+section.result {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
+  background-image: url("../images/headphones_hero_2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+section.result .container {
+  color: white;
+}
+section.result .container p {
+  max-width: 600px;
+  margin: 30px auto 50px;
+}
+section.result .container > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 50px;
+}
+
+section.result .container > div div {
+  background-image: url("../images/pentagone.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  position: relative;
+  transition: 1s;
+  cursor: pointer;
+}
+section.result .container > div div:hover {
+  transform: rotate(360deg);
+}
+section.result .container > div div h1 {
+  margin: 0;
+}
+section.result .container > div div p {
+  margin: 0;
+}
+
+section.contact .container {
+  max-width: 400px;
+}
+section.contact .container form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+section.contact .container form input {
+  border: none;
+  border-bottom: 1px solid rgb(184, 180, 180);
+  padding: 12px;
+  background-color: rgb(242, 240, 240);
+}
+section.contact .container form input::placeholder {
+  color: black;
+}
+section.contact .container form input:focus {
+  outline: none;
+}
+footer {
+  background-color: #071629;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 480px) {
+  footer .container {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+footer .container .logo {
+  width: 250px;
+}
+footer .container ul {
+  display: flex;
+  gap: 20px;
+}
+footer p {
+  text-align: center;
+  margin-top: 30px;
+  color: white;
+}
