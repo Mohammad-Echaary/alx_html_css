@@ -2,7 +2,7 @@
 ## HTML_BASIC 
 [Html basic](https://mohammad-echaary.github.io/alx_html_css/index.html)
 ## PORTFOLIO
-[PORTFOLIO TEMPLATE](https://Mohammad-Echaary.github.io/alx_html_css/index1.html)
+[PORTFOLIO TEMPLATE](https://Mohammad-Echaary.github.io/alx_html_css/index.html)
 ## HEADPHONES
 [headphones](https://mohammad-echaary.github.io/alx_html_css/1-index.html)
 
